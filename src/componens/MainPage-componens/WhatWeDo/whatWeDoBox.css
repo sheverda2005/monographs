@@ -1,0 +1,58 @@
+.whatWeDoBox {
+    padding: 25px 15px;
+    border-radius: 7px;
+    box-shadow: -1px 9px 18px 0px rgb(75 81 91 / 10%);
+    background: #ffffff;
+    text-align: center;
+    margin-bottom: 40px;
+    width: 48%;
+}
+
+.row-whatWeDoBox {
+    flex-direction: column;
+    margin: 0px 20px;
+    flex-wrap: wrap;
+}
+
+.box-title {
+    font-family: Muli, sans-serif;
+    font-size: 24px;
+    line-height: 1.3;
+    letter-spacing: 0;
+    color: #262f3c;
+}
+
+.box-text {
+    font-size: 16px;
+    letter-spacing: 0.025em;
+    line-height: 1.52941;
+    color: #8491a5;
+    margin-top: 20px;
+}
+
+@media (max-width: 1050px) {
+    .whatWeDoBox{
+        width: 45%;
+        margin: 20px 20px
+    }
+}
+
+@media (max-width: 850px) {
+    .whatWeDoBox{
+        width: 70%;
+        margin: 20px 20px
+    }
+}
+
+@media (max-width: 600px) {
+    .whatWeDoBox{
+        width: 100%;
+        margin: 20px 20px
+    }
+    .box-title {
+        font-size: 20px;
+    }
+    .box-text {
+        font-size: 14px;
+    }
+}

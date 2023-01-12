@@ -1,0 +1,149 @@
+.footer {
+    background-color: #f9f8f8;
+    padding: 60px 0px 60px 0px;
+}
+
+.footer-row {
+    justify-content: space-between;
+    align-items: flex-start
+}
+
+.title-links-footer {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1.36364;
+    color: #262f3c;
+    letter-spacing: 0;
+    margin-bottom: 40px;
+}
+
+.links-footer-list {
+    color: #262f3c;
+}
+
+.links-footer {
+    width: 30%;
+}
+
+.row-links-footer-list {
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-height: 300px;
+}
+
+.link-footer-item {
+    padding: 15px 0px 15px 0px;
+}
+
+.contacts-title-footer {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1.36364;
+    color: #262f3c;
+    letter-spacing: 0;
+    margin-bottom: 40px;
+}
+
+.contact-footer {
+    margin: 10px 0 10px 0px;
+}
+
+.aboutOrganization-title-footer {
+    max-height: 100px;
+    max-width: 100px;
+    margin-bottom: 20px;
+}
+
+.aboutOrganization-footer {
+    max-width: 30%;
+}
+
+.row-aboutOrganization-footer {
+    flex-direction: column;
+    align-items: center;
+}
+
+.link-footer {
+    color: #2c343b;
+    transition: all 0.3s;
+}
+
+.link-footer:hover {
+    color: #3375ec;
+    transition: all 0.3s;
+}
+
+@media (max-width: 1000px) {
+    .aboutOrganization-text-footer {
+        font-size: 12px;
+    }
+    .links-footer {
+        width: 40%;
+    }
+    .aboutOrganization-footer {
+        margin: 0px 30px;
+    }
+}
+
+
+.contacts-footer-images {
+    width: 75%;
+    margin-top: 30px;
+
+}
+.row-contacts-footer-images {
+    align-items: center;
+}
+
+.contacts-footer-image {
+    width: 35px;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-right: 5px;
+}
+
+.contacts-footer-image:hover {
+    transform: scale(1.2);
+    transition: all 0.3s;
+}
+
+
+@media (max-width: 850px) {
+    .aboutOrganization-footer {
+        width: 100%;
+        max-width: 100%;
+    }
+    .footer-row {
+        flex-wrap: wrap;
+        max-width: 80%;
+        margin: 0px auto;
+    }
+    .aboutOrganization-text-footer {
+        margin-bottom: 40px;
+    }
+    .links-footer {
+        width: 60%;
+    }
+}
+
+@media (max-width: 620px) {
+    .links-footer {
+        width: 100%;
+        margin: 20px 0px;
+    }
+    .aboutOrganization-footer {
+        margin: 0px 0px;
+    }
+    .link-footer-item {
+        padding: 15px 30px 15px 0px;
+    }
+    .title-links-footer {
+        margin-bottom: 20px;
+    }
+    .contacts-title-footer {
+        margin-bottom: 20px;
+    }
+    .contacts-footer-images {
+        margin-top: 20px;
+    }
+}

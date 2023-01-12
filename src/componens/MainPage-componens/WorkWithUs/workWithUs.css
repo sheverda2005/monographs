@@ -1,0 +1,30 @@
+.work-with-us {
+    padding: 100px 0px;
+}
+
+.row-work-with-us {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.barge-work-with-us {
+    color: #3375ec;
+    background: #e5ebf7;
+    max-width: 200px;
+}
+
+.title-work-with-us {
+    font-size: 39px;
+    line-height: 1.23077;
+    font-weight: 400;
+    color: #262f3c;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+@media (max-width: 750px) {
+    .title-work-with-us {
+        font-size: 35px;
+    }
+}

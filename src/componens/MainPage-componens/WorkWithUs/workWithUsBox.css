@@ -1,0 +1,44 @@
+.work-with-us-box {
+    background-color: white;
+    max-width: 226px;
+    box-shadow: 0 2px 13px 0 rgb(0 0 0 / 15%);
+    margin: 40px 10px 20px 10px;
+}
+
+.row-work-with-us-box {
+    flex-direction: column;
+}
+
+.work-with-us-box-img {
+    max-width: 226px;
+}
+
+.work-with-us-box-information {
+    padding: 30px 10px;
+}
+
+.work-with-us-box-text {
+    font-size: 16px;
+    line-height: 1.36364;
+    color: #262f3c;
+}
+
+@media (max-width: 520px) {
+    .work-with-us-box {
+        max-width: 60%;
+    }
+    .work-with-us-box-img {
+        max-width: 100%;
+    }
+
+}
+
+@media (max-width: 425px) {
+    .work-with-us-box {
+        max-width: 100%;
+    }
+    .work-with-us-box-img {
+        max-width: 100%;
+    }
+
+}

@@ -1,0 +1,167 @@
+.page-header-parallax {
+    width: 100%;
+}
+
+
+.page-header-image {
+    background-image: url("http://www.iesfukr.org/storage/photos/1/slider/24.jpg");
+    background-attachment: fixed;
+    background-position: top center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.shadow {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(7, 14, 28, 0.5);
+}
+
+.page-header-information {
+    color: white;
+    padding: 21% 5% 19% 5%;
+    width: 100%;
+}
+
+.row-page-header-information {
+    width: 100%;
+    justify-content: center;
+}
+
+.row-nearest-monograph {
+    flex-direction: column;
+}
+
+.row-next-conference {
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.next-conference-title {
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 1.16981;
+    font-family: Muli, sans-serif;
+}
+
+.next-conference-detail-button {
+    margin-top: 40px;
+    font-size: 15px;
+    line-height: 1.5;
+    letter-spacing: 0.025em;
+    color: #262f3c;
+    background-color: white;
+    border-radius: 25% / 70%;
+    max-width: 170px;
+    min-height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 400;
+    transition: all 0.3s;
+
+}
+
+.nearest-monograph-detail-button {
+    margin-top: 40px;
+    font-size: 15px;
+    line-height: 1.5;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+    background-color: #3375ec;
+    border-radius: 25% / 70%;
+    max-width: 170px;
+    min-height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 400;
+    transition: all 0.5s;
+
+}
+
+.nearest-monograph-detail-button:hover {
+    background-color: #dc3545;
+    transition: all 0.5s;
+}
+
+.next-conference-detail-button:hover {
+    background-color: #3375ec;
+    color: #ffffff;
+    transition: all 0.5s;
+}
+
+.nearest-monograph {
+    padding-left: 150px;
+}
+
+.nearest-monograph-title {
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 1.16981;
+    font-family: Muli, sans-serif;
+}
+
+@media (max-width: 1350px) {
+    .next-conference-title {
+        font-size: 40px;
+    }
+    .nearest-monograph-title {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .page-header-information {
+        padding: 22% 5% 20% 5%;
+    }
+    .next-conference-title {
+        font-size: 40px;
+    }
+    .nearest-monograph-title {
+        font-size: 40px;
+    }
+    .row-page-header-information {
+        flex-direction: column;
+    }
+    .nearest-monograph {
+        padding-left: 0px;
+    }
+    .next-conference {
+        margin-bottom: 40px;
+    }
+    .next-conference-detail-button {
+        margin-top: 30px;
+    }
+    .nearest-monograph-detail-button {
+        margin-top: 30px;
+    }
+    .nearest-monograph-detail-button {
+        max-width: 140px;
+        min-height: 50px;
+        font-size: 13px;
+    }
+    .next-conference-detail-button {
+        max-width: 140px;
+        min-height: 50px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 650px) {
+    .page-header-information {
+        padding: 40% 3% 20% 3%;
+    }
+    .next-conference-title {
+        font-size: 30px;
+    }
+    .nearest-monograph-title {
+        font-size: 30px;
+    }
+}

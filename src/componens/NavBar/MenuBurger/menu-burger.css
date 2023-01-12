@@ -1,0 +1,118 @@
+.menu-burger {
+    display: none;
+    min-width: 40px;
+    min-height: 40px;
+    margin: 0px 40px 0px 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.menu-burger.active .burger-menu-item_one {
+    transform: rotate(45deg) translate(40%, 0%);
+    transition: all 0.5s;
+}
+
+.menu-burger.active {
+    transform: translate(-20%, 0%);
+    transition: all 0.5s;
+}
+
+.menu-burger.active .burger-menu-item_two {
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.menu-burger.active .burger-menu-item_three {
+    transform: rotate(-45deg) translate(34.5%, 0%);
+    transition: all 0.5s;
+}
+
+.row-menu-burger {
+    height: 40px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.burger-menu-item {
+    background-color: #2c343b;
+    height: 2.5px;
+    width: 100%;
+    margin: 4px 0px;
+    transition: all 0.5s;
+}
+
+.modal-burger-menu {
+    display: none;
+    position: fixed;
+    background-color: #ffffff;
+    border-right: 1px solid #8491a5;
+    width: 40%;
+    height: 100%;
+    left: -800px;
+    transition: left 0.5s;
+    z-index: 90;
+}
+
+.modal-burger-menu.active {
+    left: 0px;
+    transition: left 0.5s;
+}
+
+
+.modal-burger-menu-nav-items {
+    color: #2c343b;
+    padding: 110px 20px 20px 20px;
+    font-size: 18px;
+}
+
+.modal-burger-menu-nav-item {
+    margin: 20px 0px;
+    border-bottom: 1px solid #ebebeb;
+    padding: 0px 0px 5px 5px;
+    transition: all 0.3s;
+}
+
+
+.modal-burger-menu-nav-item-link {
+    color: #2c343b;
+    transition: all 0.3s;
+}
+
+.modal-burger-menu-nav-item-link:hover {
+    color: #3375ec;
+    transition: all 0.3s;
+}
+
+.modal-burger-menu-nav-item-link.active {
+    color: #3375ec;
+    transition: all 0.3s;
+}
+
+
+@media (max-width: 1150px) {
+    .menu-burger {
+        display: block;
+    }
+    .modal-burger-menu {
+        display: block;
+    }
+
+}
+
+
+@media (max-width: 900px) {
+    .modal-burger-menu {
+        display: block;
+        width: 60%;
+    }
+
+}
+
+
+@media (max-width: 400px) {
+    .modal-burger-menu {
+        display: block;
+        width: 80%;
+    }
+
+}

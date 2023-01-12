@@ -1,0 +1,12 @@
+.barge {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .075em;
+    padding: 7px 19px;
+    font-size: 12px;
+    line-height: 1;
+    border-radius: 14px;
+    text-align: center;
+    margin-bottom: 15px;
+    overflow: hidden;
+}

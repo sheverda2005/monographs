@@ -1,0 +1,184 @@
+.authorization-page {
+    padding-top: 120px;
+}
+.authorization-box {
+    padding: 25px 15px;
+    border-radius: 7px;
+    box-shadow: -1px 9px 18px 10px rgb(51 117 236/ 10%);
+    background: #ffffff;
+    text-align: center;
+    margin: 8% auto 15% auto;
+    width: 60%;
+}
+
+.row-authorization-box {
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin: 0px auto;
+}
+
+.authorization-box-title {
+    font-family: Muli, sans-serif;
+    font-size: 24px;
+    line-height: 1.3;
+    letter-spacing: 0;
+    color: #262f3c;
+}
+
+.input-authorization-box {
+    font-family: Muli, sans-serif;
+    border: 1px solid #e7e7e7;
+    border-radius: 7px;
+    height: 50px;
+    padding: 6px 12px;
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #2c343b;
+    background-color: #fff;
+    margin: 10px 0px;
+    transition: all 0.3s;
+    width: 100%;
+}
+
+.remember-me-forgot-password-authorization-box {
+    width: 100%;
+}
+
+.input-authorization-box:focus {
+    border: 1px solid #3375ec;
+    box-shadow: -1px 9px 18px 0px rgb(51 117 236 / 10%);
+    transition: all 0.3s;
+}
+
+
+
+.input-authorization-box-email {
+    margin-top: 40px;
+}
+
+.remember-me-checkbox {
+   margin-right: 5px;
+}
+
+.remember-me-label {
+    letter-spacing: .001em;
+}
+
+.row-remember-me {
+    align-items: center;
+}
+
+.link-forgot-password {
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.6;
+    text-align: left;
+    letter-spacing: .001em;
+}
+
+
+.link-forgot-password:hover {
+    text-decoration: underline;
+}
+
+.login-authorization-box {
+    width: 100%;
+    margin: 25px 0px 10px 0px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login-authorization-box-button {
+    font-size: 16px;
+    border: 1px solid #3375ec;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: .025em;
+    color: #ffffff;
+    background-color: #3375ec;
+    padding: 9px 30px;
+    border-radius: 7px;
+    transition: all 0.3s;
+}
+
+.login-authorization-box-button:hover {
+    background-color: #ffffff;
+    border: 1px solid #3375ec;
+    color: #2c343b;
+}
+
+.authorization-box-to-register {
+    font-size: 13px;
+}
+
+.link-to-register {
+    margin-left: 4px;
+}
+
+.link-to-register:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 1100px) {
+    .authorization-box {
+        width: 80%;
+    }
+}
+
+@media (max-width: 850px) {
+    .row-authorization-box {
+        width: 80%;
+    }
+}
+
+@media (max-width: 650px) {
+    .row-login-authorization-box {
+        flex-direction: column;
+        align-items: start;
+    }
+    .login-authorization-box-button {
+        margin-bottom: 15px;
+    }
+    .authorization-box {
+        width: 90%;
+    }
+    .row-authorization-box {
+        width: 90%;
+    }
+}
+
+@media (max-width: 450px) {
+    .authorization-box {
+        width: 95%;
+    }
+}
+
+@media (max-width: 350px) {
+    .remember-me-label {
+        font-size: 12px;
+    }
+    .link-forgot-password {
+        font-size: 12px;
+    }
+    .authorization-box-title {
+        font-size: 20px;
+    }
+    .input-authorization-box-email {
+        margin-top: 30px;
+    }
+    .login-authorization-box {
+        margin: 15px 0px 10px 0px;
+    }
+    .authorization-box-to-register {
+        font-size: 12px;
+    }
+    .login-authorization-box-button {
+        font-size: 15px;
+    }
+    .input-authorization-box {
+        font-size: 14px;
+    }
+}

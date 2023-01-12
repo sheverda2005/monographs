@@ -1,0 +1,47 @@
+.conferences-page-content {
+    width: 100%;
+    border-top: 1px solid #ebebeb;
+    background-color: #ffffff;
+    padding: 40px 0px;
+}
+
+.conferences-page-content-title {
+    font-size: 30px;
+    text-align: center;
+    line-height: 1.16981;
+    letter-spacing: 0;
+    font-family: Muli, sans-serif;
+    font-weight: 300;
+    color: #262f3c;
+    margin: 0px auto;
+
+}
+
+.row-conferences-page-content {
+    flex-direction: column;
+}
+
+.conferences-page-content-text {
+    margin-top: 40px;
+    line-height: 2;
+    font-size: 17px;
+    color: #262f3c;
+}
+
+@media (max-width: 650px) {
+    .conferences-page-content-title {
+        font-size: 25px;
+    }
+    .conferences-page-content-text {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 450px) {
+    .conferences-page-content-title {
+        font-size: 23px;
+    }
+    .conferences-page-content-text {
+        margin-top: 30px;
+    }
+}

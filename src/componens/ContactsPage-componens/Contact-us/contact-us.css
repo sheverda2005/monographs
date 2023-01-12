@@ -1,0 +1,107 @@
+.contact-us {
+    width: 100%;
+    border-top: 1px solid #ebebeb;
+    background-color: #ffffff;
+    padding: 40px 0px;
+}
+
+.row-contact-us {
+    flex-direction: column;
+}
+
+.contact-us-title {
+    font-size: 40px;
+    line-height: 1.16981;
+    letter-spacing: 0;
+    font-family: Muli, sans-serif;
+    font-weight: 300;
+    color: #262f3c;
+    margin: 0px auto;
+}
+
+.all-information-about-our-contacts {
+    margin-top: 40px;
+}
+
+.row-numbers-information-items {
+   flex-direction: column;
+}
+
+.all-information-title {
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.35;
+    color: #8491a5;
+    text-transform: uppercase;
+    letter-spacing: .34em;
+}
+
+.numbers-information-item {
+    margin-top: 15px;
+    align-items: center;
+}
+
+.row-information-item {
+    display: inline-flex;
+    align-items: center;
+}
+
+.information-item-img {
+    max-height: 22px;
+    margin-right: 20px;
+}
+
+.current-information-item {
+    font-size: 17px;
+    line-height: 1.52941;
+    color: #262f3c;
+}
+
+
+.address-information-items {
+    margin-top: 15px;
+}
+
+.email-information-items {
+    margin-top: 15px;
+}
+
+@media (max-width: 1024px) {
+    .row-all-information-about-our-contacts {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .row-contact-us {
+        margin-left: 10%;
+    }
+    .numbers-all-information {
+        margin: 0px 10px 30px 0px;
+    }
+    .address-all-information {
+        margin: 0px 10px 30px 0px;
+    }
+    .email-all-information {
+        margin: 0px 10px 30px 0px;
+    }
+    .contact-us-title {
+        margin: 0px;
+    }
+}
+
+@media (max-width: 500px) {
+    .row-contact-us {
+        margin-left: 5%;
+    }
+    .contact-us-title {
+        font-size: 35px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 350px) {
+    .contact-us-title {
+        font-size: 30px;
+        text-align: center;
+    }
+}

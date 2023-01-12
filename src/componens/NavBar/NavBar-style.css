@@ -1,0 +1,147 @@
+.main-navigation {
+    position: fixed;
+    padding: 17px 0px;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 1px solid #8491a5;
+    opacity: 1;
+    transition: all 0.5s;
+    z-index: 100;
+}
+
+.main-navigation.scrollY {
+    top: 0;
+    padding: 12px 0px;
+    transition: all 0.5s;
+}
+
+.main-navigation.scrollY:hover {
+    opacity: 1;
+    transition: all 0.3s;
+}
+
+
+.row-menu {
+    align-items: center;
+    height: 100%;
+}
+
+.nav-logo-menu {
+    width: 75%;
+}
+
+.logo-img {
+    width: 70px;
+    height: auto;
+    transition: all 0.5s;
+}
+
+.main-navigation.scrollY .logo-img {
+    width: 60px;
+    height: auto;
+    transition: all 0.5s;
+}
+
+.navigator-menu {
+    width: 85%;
+}
+
+.nav-items {
+    height: 100%;
+}
+
+.row-nav-items {
+    align-items: center;
+}
+
+.nav-item {
+    color: #2c343b;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.6;
+    transition: color 0.5s;
+    margin: 0px 10px;
+}
+
+
+.authorization-button {
+    border: 1px solid #3375ec;
+    padding: 11px 20px 11px 20px;
+    border-radius: 22% / 70%;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: .025em;
+    cursor: pointer;
+    color: #262f3c;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.authorization-button:hover {
+    background-color: #3375ec;
+    color: white;
+    transition: all 0.3s;
+}
+
+.authorization-button.active {
+    background-color: #3375ec;
+    color: white;
+    transition: all 0.3s;
+}
+
+
+.nav-item-link {
+    color: #2c343b;
+    transition: all 0.3s;
+}
+
+.nav-item-link:hover {
+    color: #3375ec;
+    transition: all 0.3s;
+}
+
+.nav-item-link.active {
+    color: #3375ec;
+}
+
+@media (max-width: 1250px) {
+    .nav-logo-menu {
+        width: 85%;
+    }
+    .navigator-menu {
+        width: 90%;
+    }
+
+    .main-navigation {
+        padding: 17px 0px;
+    }
+    .main-navigation.scrollY {
+        padding: 7px 0px;
+    }
+    .logo-img {
+        width: 60px;
+        height: auto;
+    }
+
+}
+
+@media (max-width: 1150px) {
+    .navigator-menu {
+       display: none;
+    }
+}
+
+@media (max-width: 450px) {
+    .main-navigation {
+        padding: 12px 0px;
+    }
+    .main-navigation.scrollY {
+        padding: 8px 0px;
+    }
+    .main-navigation.scrollY .logo-img {
+        width: 40px;
+        height: auto;
+    }
+}
+
+
