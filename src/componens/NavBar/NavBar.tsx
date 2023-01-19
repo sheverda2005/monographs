@@ -6,6 +6,7 @@ import {NavLink} from "react-router-dom";
 import ModalBurgerMenu from "./MenuBurger/ModalBurgerMenu";
 const NavBar: FC = () => {
     const {scrollY} = useTypedSelector(state => state.scroll)
+    const {isAuth} = useTypedSelector(state => state.user.userData)
     return (
        <div className={"navigation-bar"}>
            <nav   className={!!scrollY ? "main-navigation scrollY" : "main-navigation"}>
@@ -47,7 +48,7 @@ const NavBar: FC = () => {
                                </div>
                            </div>
                        </div>
-                           <NavLink to={"/authorization"} className="authorization-button">Авторизація</NavLink>
+                       {isAuth ?  <NavLink to={"/account"} className="account-button" >Профіль</NavLink>:  <NavLink to={"/authorization"} className="authorization-button">Авторизація</NavLink>}
                    </div>
                </div>
            </nav>

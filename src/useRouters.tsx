@@ -9,22 +9,40 @@ import PaymentPage from "./pages/PaymentPage";
 import ContactsPage from "./pages/ContactsPage";
 import AuthorizationPage from "./pages/AuthorizationPage";
 import RegistrationPage from "./pages/RegistrationPage";
+import AccountPage from "./pages/AccountPage";
 
 
-export function useRouters() {
-    return (
-        <Routes>
-            <Route path={"/"} element={<MainPage/>} />
-            <Route path={"/conferences"} element={<СonferencesPage/>} />
-            <Route path={"/monographs"} element={<MonographsPage/>} />
-            <Route path={"/manuals"} element={<ManualsPage/>} />
-            <Route path={"/magazines"} element={<MagazinesPage/>} />
-            <Route path={"/internship"} element={<InternshipPage/>} />
-            <Route path={"/payment"} element={<PaymentPage/>} />
-            <Route path={"/contacts"} element={<ContactsPage/>} />
-            <Route path={"/authorization"} element={<AuthorizationPage/>} />
-            <Route path={"/registration"} element={<RegistrationPage/>} />
-            <Route path={"*"} element={<Navigate to={"/"}/>} />
-        </Routes>
-    )
+export function useRouters(isAuth: boolean) {
+   if (isAuth) {
+       return (
+           <Routes>
+               <Route path={"/"} element={<MainPage/>} />
+               <Route path={"/conferences"} element={<СonferencesPage/>} />
+               <Route path={"/monographs"} element={<MonographsPage/>} />
+               <Route path={"/manuals"} element={<ManualsPage/>} />
+               <Route path={"/magazines"} element={<MagazinesPage/>} />
+               <Route path={"/internship"} element={<InternshipPage/>} />
+               <Route path={"/payment"} element={<PaymentPage/>} />
+               <Route path={"/contacts"} element={<ContactsPage/>} />
+               <Route path={"/account"} element={<AccountPage/>} />
+               <Route path={"*"} element={<Navigate to={"/"}/>} />
+           </Routes>
+       )
+   } else {
+       return (
+           <Routes>
+               <Route path={"/"} element={<MainPage/>} />
+               <Route path={"/conferences"} element={<СonferencesPage/>} />
+               <Route path={"/monographs"} element={<MonographsPage/>} />
+               <Route path={"/manuals"} element={<ManualsPage/>} />
+               <Route path={"/magazines"} element={<MagazinesPage/>} />
+               <Route path={"/internship"} element={<InternshipPage/>} />
+               <Route path={"/payment"} element={<PaymentPage/>} />
+               <Route path={"/contacts"} element={<ContactsPage/>} />
+               <Route path={"/authorization"} element={<AuthorizationPage/>} />
+               <Route path={"/registration"} element={<RegistrationPage/>} />
+               <Route path={"*"} element={<Navigate to={"/"}/>} />
+           </Routes>
+       )
+   }
 }

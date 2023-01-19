@@ -1,0 +1,11 @@
+.error-component {
+    position: fixed;
+    top: 25%;
+    left: 30px;
+    background-color: #dc3545;
+    padding: 20px;
+    border-radius: 7px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+}

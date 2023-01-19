@@ -77,6 +77,31 @@
     transition: color 0.3s, background-color 0.3s;
 }
 
+.account-button {
+    border: 1px solid #3375ec;
+    padding: 11px 20px 11px 20px;
+    border-radius: 25% / 70%;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: .065em;
+    cursor: pointer;
+    color: #262f3c;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.account-button:hover {
+    background-color: #3375ec;
+    color: white;
+    transition: all 0.3s;
+}
+
+.account-button.active {
+    background-color: #3375ec;
+    color: white;
+    transition: all 0.3s;
+}
+
 .authorization-button:hover {
     background-color: #3375ec;
     color: white;

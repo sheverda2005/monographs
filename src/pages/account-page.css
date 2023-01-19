@@ -1,0 +1,24 @@
+.account-page {
+    padding-top: 120px;
+}
+
+.account-page-title {
+    font-size: 18px;
+    margin: 0px 10px;
+}
+
+.account-information {
+    margin: 100px;
+}
+
+.logout-button {
+    margin-left: 20px;
+    background-color: #dc3545;
+    padding: 10px;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: .065em;
+    color: #ffffff;
+}
