@@ -45,7 +45,7 @@ export function useRouters(isAuth: boolean, loading: boolean) {
                <Route path={"/contacts"} element={<ContactsPage/>} />
                <Route path={"/authorization"} element={<AuthorizationPage/>} />
                <Route path={"/registration"} element={<RegistrationPage/>} />
-               <Route path={"*"} element={<Navigate to={"/"}/>} />
+               <Route path={"*"} element={<div style={{paddingTop: '120px'}} >сторінка не знайдена</div>} />
            </Routes>
        )
    }
