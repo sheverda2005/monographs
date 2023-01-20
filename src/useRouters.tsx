@@ -29,7 +29,7 @@ export function useRouters(isAuth: boolean, loading: boolean) {
                <Route path={"/payment"} element={<PaymentPage/>} />
                <Route path={"/contacts"} element={<ContactsPage/>} />
                <Route path={"/account"} element={<AccountPage/>} />
-               <Route path={"*"} element={<div>true</div>} />
+               <Route path={"*"} element={<Navigate to={"/"} />} />
            </Routes>
        )
    } else {
@@ -45,7 +45,7 @@ export function useRouters(isAuth: boolean, loading: boolean) {
                <Route path={"/contacts"} element={<ContactsPage/>} />
                <Route path={"/authorization"} element={<AuthorizationPage/>} />
                <Route path={"/registration"} element={<RegistrationPage/>} />
-               <Route path={"*"} element={<div>true</div>} />
+               <Route path={"*"} element={<Navigate to={"/"} />} />
            </Routes>
        )
    }
