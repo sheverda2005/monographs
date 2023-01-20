@@ -16,15 +16,13 @@ const AccountPage: FC = () => {
     return (
         <div className={"account-page"}>
            <div className="container">
-               <div className="row">
-                   <div className="account-information row">
-                       <h1 className={"account-page-title"} >{name}</h1>
-                       <h1 className={"account-page-title"} >{lastName}</h1>
-                       <h1 className={"account-page-title"} >{surName}</h1>
+               <div className="row row-account-page">
+                   <div className="account-information">
+                       <h1 className={"account-information-welcome-title"} >Вітаємо вас на нашому сайті, {name + " " + lastName +  " " + surName}</h1>
                        <button onClick={()=> {
                            logout(redirect)
                        }}
-                       className={"logout-button"} > Вийти з акаунту</button>
+                       className={"logout-button"} >Вийти з аккаунту</button>
                    </div>
                </div>
            </div>
