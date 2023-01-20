@@ -15,7 +15,23 @@ import Spinner from "./componens/Spinner/Spinner";
 
 export function useRouters(isAuth: boolean, loading: boolean) {
     if (loading) {
-        return <Spinner/>
+        return (
+            <Routes>
+                <Route path={"/"} element={<MainPage/>} />
+                <Route path={"/conferences"} element={<СonferencesPage/>} />
+                <Route path={"/monographs"} element={<MonographsPage/>} />
+                <Route path={"/manuals"} element={<ManualsPage/>} />
+                <Route path={"/magazines"} element={<MagazinesPage/>} />
+                <Route path={"/internship"} element={<InternshipPage/>} />
+                <Route path={"/payment"} element={<PaymentPage/>} />
+                <Route path={"/contacts"} element={<ContactsPage/>} />
+                <Route path={"/account"} element={<AccountPage/>} />
+                <Route path={"/authorization"} element={<Spinner/>} />
+                <Route path={"/registration"} element={<Spinner/>} />
+                <Route path={"/account"} element={<Spinner/>} />
+                <Route path={"*"} element={<div>.</div>} />
+            </Routes>
+        )
     }
    if (isAuth) {
        return (
@@ -29,8 +45,6 @@ export function useRouters(isAuth: boolean, loading: boolean) {
                <Route path={"/payment"} element={<PaymentPage/>} />
                <Route path={"/contacts"} element={<ContactsPage/>} />
                <Route path={"/account"} element={<AccountPage/>} />
-               <Route path={"/authorization"} element={<AuthorizationPage/>} />
-               <Route path={"/registration"} element={<RegistrationPage/>} />
                <Route path={"*"} element={<div>.</div>} />
            </Routes>
        )
