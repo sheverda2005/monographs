@@ -25,10 +25,7 @@ export function useRouters(isAuth: boolean, loading: boolean) {
                 <Route path={"/internship"} element={<InternshipPage/>} />
                 <Route path={"/payment"} element={<PaymentPage/>} />
                 <Route path={"/contacts"} element={<ContactsPage/>} />
-                <Route path={"/authorization"} element={<Spinner/>} />
-                <Route path={"/registration"} element={<Spinner/>} />
-                <Route path={"/account"} element={<Spinner/>} />
-                <Route path={"*"} element={<div>.</div>} />
+                <Route path={"*"} element={<Spinner/>} />
             </Routes>
         )
     }
