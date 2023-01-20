@@ -29,7 +29,7 @@ export function useRouters(isAuth: boolean, loading: boolean) {
                <Route path={"/payment"} element={<PaymentPage/>} />
                <Route path={"/contacts"} element={<ContactsPage/>} />
                <Route path={"/account"} element={<AccountPage/>} />
-               <Route path={"*"} element={<Navigate to={"/"}/>} />
+               <Route path={"*"} element={<div style={{paddingTop: '120px'}} >сторінка не знайдена</div>} />
            </Routes>
        )
    } else {
