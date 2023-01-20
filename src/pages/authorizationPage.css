@@ -59,10 +59,13 @@
 
 .remember-me-checkbox {
    margin-right: 5px;
+   cursor: pointer;
 }
 
 .remember-me-label {
     letter-spacing: .001em;
+    cursor: pointer;
+    user-select: none;
 }
 
 .row-remember-me {
