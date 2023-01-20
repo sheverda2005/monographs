@@ -31,7 +31,9 @@ export const userDataReducer = (state = initialState, action: IUserDataActions):
                 ActivationLink: action.payload.ActivationLink
             }
         case IUserDataTypes.USER_DATA_TYPES_ERROR:
-            return {...state, error: action.payload}
+            return {...state, error: action.payload, loading: false}
+        case IUserDataTypes.USER_DATA_TYPES_ERROR_CLEAR:
+            return {...state, error: null}
         case IUserDataTypes.USER_DATA_TYPES_CLEAR:
             return {...state,
                 email: "",

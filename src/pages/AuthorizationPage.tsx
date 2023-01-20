@@ -1,8 +1,9 @@
-import {FC, useEffect} from "react";
+import React, {FC, useEffect} from "react";
 import "./authorizationPage.css"
 import {Link, useNavigate} from "react-router-dom";
 import {useActions} from "../hooks/useActions";
 import {useTypedSelector} from "../hooks/useTypedSelector";
+import ErrorComponent from "../componens/Error-component/ErrorComponent";
 const AuthorizationPage: FC = () => {
     const history = useNavigate()
     function redirect () {
@@ -13,8 +14,10 @@ const AuthorizationPage: FC = () => {
     }, []);
     const {emailLogin, passwordLogin, rememberMe, login_Submit} = useActions()
     const {email, password, remember_me} = useTypedSelector(state => state.user.loginUser)
+    const {error} = useTypedSelector(state => state.user.userData)
     return (
         <div className={"authorization-page"} >
+            {error ? <ErrorComponent message={error}/> : null}
             <div className="container">
                 <form className={"login-form"}>
                     <div className="row">

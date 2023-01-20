@@ -17,6 +17,7 @@ export enum IUserDataTypes {
     USER_DATA_TYPES_LOADING= "USER_DATA_TYPES_LOADING",
     USER_DATA_TYPES_SUCCESS="USER_DATA_TYPES_SUCCESS",
     USER_DATA_TYPES_ERROR="USER_DATA_TYPES_ERROR",
+    USER_DATA_TYPES_ERROR_CLEAR="USER_DATA_TYPES_ERROR_CLEAR",
     USER_DATA_TYPES_CLEAR="USER_DATA_TYPES_CLEAR"
 }
 
@@ -34,8 +35,12 @@ interface userDataError {
     payload: string
 }
 
+interface userDataErrorClear {
+    type: IUserDataTypes.USER_DATA_TYPES_ERROR_CLEAR
+}
+
 interface userDataClear {
     type: IUserDataTypes.USER_DATA_TYPES_CLEAR
 }
 
-export type IUserDataActions = userDataLoading | userDataSuccess | userDataError | userDataClear
+export type IUserDataActions = userDataLoading | userDataSuccess | userDataError | userDataClear | userDataErrorClear

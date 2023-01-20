@@ -1,4 +1,4 @@
-import {FC, useEffect} from "react";
+import React, {FC, useEffect} from "react";
 import "./account-page.css"
 import {useTypedSelector} from "../hooks/useTypedSelector";
 import {useActions} from "../hooks/useActions";

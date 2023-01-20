@@ -27,7 +27,6 @@ $api.interceptors.response.use((config) => {
             localStorage.setItem("accessToken", response.data.accessToken)
             return $api.request(originalRequest)
         } catch (e) {
-
         }
     }
     return error;

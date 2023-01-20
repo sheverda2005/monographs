@@ -35,7 +35,10 @@ export function login_Submit(event: React.MouseEvent<HTMLButtonElement> , email:
             dispatch({type: LoginTypes.CLEAR_LOGIN})
             redirect()
         } catch (e) {
-            dispatch({type: LoginTypes.ERROR_LOGIN, payload: "Сталась помилка"})
+            dispatch({type: IUserDataTypes.USER_DATA_TYPES_ERROR, payload: "Ви ввели некоректні данні"})
+            setTimeout(()=> {
+                dispatch({type: IUserDataTypes.USER_DATA_TYPES_ERROR_CLEAR})
+            }, 3000 )
         }
     }
 }

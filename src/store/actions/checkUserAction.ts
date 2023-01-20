@@ -15,7 +15,11 @@ export function checkUser() {
             localStorage.setItem("accessToken", res.data.accessToken)
             dispatch({type: IUserDataTypes.USER_DATA_TYPES_SUCCESS, payload: res.data.userData})
         } catch (e) {
+            localStorage.removeItem("accessToken")
             dispatch({type: IUserDataTypes.USER_DATA_TYPES_ERROR, payload: "Сталась помилка"})
+            setTimeout(()=> {
+                dispatch({type: IUserDataTypes.USER_DATA_TYPES_ERROR_CLEAR})
+            }, 3000)
         }
     }
 }

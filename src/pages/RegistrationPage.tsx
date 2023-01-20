@@ -3,8 +3,8 @@ import "./registrationPage.css"
 import {useActions} from "../hooks/useActions";
 import {useTypedSelector} from "../hooks/useTypedSelector";
 import {store} from "../store";
-import ErrorComponent from "../componens/Error-component/ErrorComponent";
 import {useNavigate} from "react-router-dom";
+import ErrorComponent from "../componens/Error-component/ErrorComponent";
 const RegistrationPage: FC = () => {
     const history = useNavigate()
     function redirect () {
