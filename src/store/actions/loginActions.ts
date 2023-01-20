@@ -22,7 +22,7 @@ export function rememberMe() {
     }
 }
 
-export function login_Submit(event: React.MouseEvent<HTMLButtonElement> , email: string, password: string, remember_me: boolean) {
+export function login_Submit(event: React.MouseEvent<HTMLButtonElement> , email: string, password: string, remember_me: boolean, redirect: any) {
     return async (dispatch: Dispatch<LoginActions | IUserDataActions>) => {
         try {
             event.preventDefault()
@@ -33,6 +33,7 @@ export function login_Submit(event: React.MouseEvent<HTMLButtonElement> , email:
             }
             dispatch({type: IUserDataTypes.USER_DATA_TYPES_SUCCESS, payload: res.data.userData})
             dispatch({type: LoginTypes.CLEAR_LOGIN})
+            redirect()
         } catch (e) {
             dispatch({type: LoginTypes.ERROR_LOGIN, payload: "Сталась помилка"})
         }

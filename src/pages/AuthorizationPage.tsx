@@ -1,9 +1,13 @@
 import {FC, useEffect} from "react";
 import "./authorizationPage.css"
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 import {useActions} from "../hooks/useActions";
 import {useTypedSelector} from "../hooks/useTypedSelector";
 const AuthorizationPage: FC = () => {
+    const history = useNavigate()
+    function redirect () {
+        history("/account")
+    }
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
@@ -38,7 +42,7 @@ const AuthorizationPage: FC = () => {
                            </div>
                            <div className="login-authorization-box row row-login-authorization-box">
                                <button type={"submit"} onClick={(event)=> {
-                                   login_Submit(event, email, password, remember_me)
+                                   login_Submit(event, email, password, remember_me, redirect)
                                } } className={"login-authorization-box-button"} >Увійти</button>
                                <p className={"authorization-box-to-register"}>
                                    Немаєте аккаунта?
