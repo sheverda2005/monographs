@@ -7,7 +7,7 @@ import Footer from "./componens/Footer/Footer";
 import {useTypedSelector} from "./hooks/useTypedSelector";
 const App = () => {
     const {scrollY, checkUser} = useActions()
-    const {isAuth} = useTypedSelector(state => state.user.userData)
+    const {isAuth, loading} = useTypedSelector(state => state.user.userData)
     useEffect(()=> {
         window.addEventListener('scroll', ()=> {
             scrollY(window.pageYOffset)
@@ -17,7 +17,7 @@ const App = () => {
     return (
             <BrowserRouter>
                 <NavBar/>
-                {useRouters(isAuth)}
+                {useRouters(isAuth, loading)}
                 <Footer/>
             </BrowserRouter>
     );

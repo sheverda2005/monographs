@@ -4,9 +4,10 @@ import MenuBurger from "./MenuBurger/MenuBurger";
 import {useTypedSelector} from "../../hooks/useTypedSelector";
 import {NavLink} from "react-router-dom";
 import ModalBurgerMenu from "./MenuBurger/ModalBurgerMenu";
+import SpinnerButton from "../Spinner/SpinnerButton";
 const NavBar: FC = () => {
     const {scrollY} = useTypedSelector(state => state.scroll)
-    const {isAuth} = useTypedSelector(state => state.user.userData)
+    const {isAuth, loading} = useTypedSelector(state => state.user.userData)
     return (
        <div className={"navigation-bar"}>
            <nav   className={!!scrollY ? "main-navigation scrollY" : "main-navigation"}>
@@ -48,7 +49,7 @@ const NavBar: FC = () => {
                                </div>
                            </div>
                        </div>
-                       {isAuth ?  <NavLink to={"/account"} className="account-button" >Профіль</NavLink>:  <NavLink to={"/authorization"} className="authorization-button">Авторизація</NavLink>}
+                       {loading ? <NavLink to={"/"} className="loading-spinner-button" > <SpinnerButton/> </NavLink> :  isAuth ?  <NavLink to={"/account"} className="account-button" >Профіль</NavLink>:  <NavLink to={"/authorization"} className="authorization-button">Авторизація</NavLink>}
                    </div>
                </div>
            </nav>

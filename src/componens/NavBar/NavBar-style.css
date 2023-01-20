@@ -90,6 +90,21 @@
     transition: color 0.3s, background-color 0.3s;
 }
 
+.loading-spinner-button {
+    border: 1px solid #3375ec;
+    background-color: #3375ec;
+    width: 95px;
+    height: 40px;
+    border-radius: 25% / 70%;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: .065em;
+    cursor: pointer;
+    color: #262f3c;
+    transition: color 0.3s, background-color 0.3s;
+}
+
 .account-button:hover {
     background-color: #3375ec;
     color: white;

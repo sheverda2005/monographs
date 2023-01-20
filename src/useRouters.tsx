@@ -10,9 +10,13 @@ import ContactsPage from "./pages/ContactsPage";
 import AuthorizationPage from "./pages/AuthorizationPage";
 import RegistrationPage from "./pages/RegistrationPage";
 import AccountPage from "./pages/AccountPage";
+import Spinner from "./componens/Spinner/Spinner";
 
 
-export function useRouters(isAuth: boolean) {
+export function useRouters(isAuth: boolean, loading: boolean) {
+    if (loading) {
+        return <Spinner/>
+    }
    if (isAuth) {
        return (
            <Routes>
