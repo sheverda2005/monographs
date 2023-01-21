@@ -1,7 +1,10 @@
-import {FC} from "react"
+import {FC, useEffect} from "react"
 import "./errorPage.css"
 
 export const ErrorPage: FC = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return (
            <div className={"error-page"} >
                <div className={"container"} >
