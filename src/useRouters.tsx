@@ -11,6 +11,7 @@ import AuthorizationPage from "./pages/AuthorizationPage";
 import RegistrationPage from "./pages/RegistrationPage";
 import AccountPage from "./pages/AccountPage";
 import Spinner from "./componens/Spinner/Spinner";
+import ErrorPage from "./pages/ErrorPage";
 
 
 export function useRouters(isAuth: boolean, loading: boolean) {
@@ -41,7 +42,7 @@ export function useRouters(isAuth: boolean, loading: boolean) {
                <Route path={"/payment"} element={<PaymentPage/>} />
                <Route path={"/contacts"} element={<ContactsPage/>} />
                <Route path={"/account"} element={<AccountPage/>} />
-               <Route path={"*"} element={<div>.</div>} />
+               <Route path={"*"} element={<ErrorPage/>} />
            </Routes>
        )
    } else {
@@ -57,7 +58,7 @@ export function useRouters(isAuth: boolean, loading: boolean) {
                <Route path={"/contacts"} element={<ContactsPage/>} />
                <Route path={"/authorization"} element={<AuthorizationPage/>} />
                <Route path={"/registration"} element={<RegistrationPage/>} />
-               <Route path={"*"} element={<div>.</div>} />
+               <Route path={"*"} element={<ErrorPage/>} />
            </Routes>
        )
    }

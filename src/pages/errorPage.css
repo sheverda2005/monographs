@@ -1,0 +1,16 @@
+.error-page {
+    padding-top: 120px;
+}
+
+.row-error-page {
+    justify-content: center;
+    align-content: center;
+}
+
+.error-page-title {
+    margin: 20% 0 20% 0;
+    font-size: 39px;
+    line-height: 1.23077;
+    font-family: Muli, sans-serif;
+    color: #262f3c;
+}
