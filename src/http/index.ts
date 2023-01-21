@@ -1,7 +1,7 @@
 import axios from "axios";
 import {AuthResponse} from "../models/AuthResponse";
 
-const API_URL = "https://server-monographs.vercel.app/api"
+const API_URL = "http://localhost:5000/api"
 
 const $api = axios.create({
     withCredentials: true,
@@ -13,7 +13,6 @@ $api.interceptors.request.use((config) => {
     config.headers.Authorization = `Bearer ${localStorage.getItem("accessToken")}`
     return config
 })
-
 
 $api.interceptors.response.use((config) => {
     return config;
