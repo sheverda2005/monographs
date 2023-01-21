@@ -1,7 +1,7 @@
 import axios from "axios";
 import {AuthResponse} from "../models/AuthResponse";
 
-const API_URL = "http://localhost:5000/api"
+const API_URL = "https://server-monographs.vercel.app/api"
 
 const $api = axios.create({
     withCredentials: true,
