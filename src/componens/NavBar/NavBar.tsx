@@ -15,21 +15,24 @@ const NavBar: FC = () => {
                    <div className="row row-menu">
                        <MenuBurger/>
                        <div className="nav-logo-menu">
-                           <div className="row">        
-                               <div className="logo">
-                                   <img src="/images/logo_2.png" className={"logo-img"} alt=""/>
-                               </div>
+                           <div className="row">
+                               <NavLink to={"/"} >
+                                   <div className="logo">
+                                       <img src="/images/logo_2.png" className={"logo-img"} alt=""/>
+                                   </div>
+                               </NavLink>
                                <div className="navigator-menu">
                                    <ul className={"row row-nav-items  nav-items"}>
                                        <li className={"nav-item"}>
                                            <NavLink className={"nav-item-link"} to={"/"}>Головна</NavLink>
                                        </li>
                                        <li className={"nav-item"}>
-                                           <NavLink className={"nav-item-link"} to={"/conferences"}>Конференції</NavLink>
-                                       </li>
-                                       <li className={"nav-item"} >
+                                           <NavLink className={"nav-item-link nav-item-link-conferences"} to={"/conferences"}>Конференції
+                                           </NavLink>
+                                           <div className={"nav-item-arrow"} ></div>
+                                       </li><li className={"nav-item"} >
                                            <NavLink className={"nav-item-link"} to={"/monographs"}>Монографії</NavLink>
-                                       </li>
+                                   </li>
                                        <li className={"nav-item"} >
                                            <NavLink className={"nav-item-link"} to={"/manuals"}>Посібники</NavLink>
                                        </li>

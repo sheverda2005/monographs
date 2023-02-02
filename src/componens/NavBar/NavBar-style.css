@@ -43,7 +43,7 @@
 }
 
 .navigator-menu {
-    width: 85%;
+    width: 88%;
 }
 
 .nav-items {
@@ -56,11 +56,13 @@
 
 .nav-item {
     color: #2c343b;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 400;
     line-height: 1.6;
     transition: color 0.5s;
     margin: 0px 10px;
+    display: flex;
+    align-items: center;
 }
 
 

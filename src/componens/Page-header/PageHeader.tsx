@@ -6,7 +6,7 @@ interface IPageHeader {
 }
 const PageHeader:FC<IPageHeader> = ({title}) => {
     return (
-        <div className={"header-page row"} >
+        <div className={"header-page row row-header-page"} >
             <h1 className="header-page-title">
                 {title}
             </h1>

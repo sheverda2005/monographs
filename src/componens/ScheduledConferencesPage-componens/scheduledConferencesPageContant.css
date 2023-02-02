@@ -1,0 +1,104 @@
+.scheduled-conferences-page-contant {
+    width: 100%;
+    border-top: 1px solid #ebebeb;
+    background-color: #ffffff;
+    padding: 40px 0px;
+}
+
+.row-scheduled-conferences-page-contant {
+    flex-direction: column;
+}
+
+.scheduled-conferences-page-contant-title {
+    font-size: 20px;
+    line-height: 1.16981;
+    letter-spacing: 0;
+    font-family: Muli, sans-serif;
+    font-weight: 300;
+    color: #262f3c;
+    margin: 0px auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.scheduled-conferences-page-contant-text {
+   font-size: 16px;
+}
+
+.row-conferences-page-tables {
+    flex-direction: column;
+}
+
+.conferences-page-tables {
+    margin: 20px 0px;
+}
+
+.conferences-page-table {
+    border: 1px solid #3375ec;
+    box-shadow: -1px 9px 18px 10px rgb(51 117 236 / 4%);
+    border-radius: 7px;
+    margin: 20px 0px;
+    padding: 20px 30px;
+    font-size: 15px;
+    color: #262f3c;
+}
+
+.row-conferences-page-table {
+    flex-direction: column;
+}
+
+.conferences-page-table-link {
+    margin-top: 20px;
+    font-size: 17px;
+}
+
+
+.conferences-page-table-link:hover {
+    text-decoration: underline;
+}
+
+.row-conferences-page-table-place {
+    align-items: center;
+}
+
+.conferences-page-table-place-img {
+    margin-right: 10px;
+}
+
+@media (max-width: 800px) {
+    .scheduled-conferences-page-contant-title {
+        font-size: 17px;
+        margin-bottom: 0px;
+    }
+    .row-conferences-page-table-information {
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .row-conferences-page-table-place {
+        justify-content: start;
+    }
+
+    .conferences-page-table-place {
+        margin-bottom: 7px;
+    }
+
+    .conferences-page-table-item {
+        margin-bottom: 7px;
+    }
+}
+
+@media (max-width: 425px) {
+    .conferences-page-table-link {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    .scheduled-conferences-page-contant-title {
+        font-size: 17px;
+        margin-bottom: 0px;
+    }
+    .scheduled-conferences-page-contant-text {
+        font-size: 14px;
+    }
+}
+

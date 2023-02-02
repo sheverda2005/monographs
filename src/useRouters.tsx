@@ -12,6 +12,7 @@ import RegistrationPage from "./pages/RegistrationPage";
 import AccountPage from "./pages/AccountPage";
 import Spinner from "./componens/Spinner/Spinner";
 import ErrorPage from "./pages/ErrorPage";
+import ScheduledConferencesPage from "./pages/ScheduledConferencesPage";
 
 
 export function useRouters(isAuth: boolean, loading: boolean) {
@@ -42,6 +43,7 @@ export function useRouters(isAuth: boolean, loading: boolean) {
                <Route path={"/payment"} element={<PaymentPage/>} />
                <Route path={"/contacts"} element={<ContactsPage/>} />
                <Route path={"/account"} element={<AccountPage/>} />
+               <Route path={"/scheduled-conferences-page"}  element={<ScheduledConferencesPage/>} />
                <Route path={"*"} element={<ErrorPage/>} />
            </Routes>
        )
@@ -56,6 +58,7 @@ export function useRouters(isAuth: boolean, loading: boolean) {
                <Route path={"/internship"} element={<InternshipPage/>} />
                <Route path={"/payment"} element={<PaymentPage/>} />
                <Route path={"/contacts"} element={<ContactsPage/>} />
+               <Route path={"/scheduled-conferences-page"}  element={<ScheduledConferencesPage/>} />
                <Route path={"/authorization"} element={<AuthorizationPage/>} />
                <Route path={"/registration"} element={<RegistrationPage/>} />
                <Route path={"*"} element={<ErrorPage/>} />

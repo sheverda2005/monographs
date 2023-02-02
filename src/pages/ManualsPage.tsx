@@ -1,9 +1,12 @@
 import React from 'react';
-
+import PageHeader from "../componens/Page-header/PageHeader";
+import CustomPath from "../componens/Custom-path/CustomPath";
+import "./manualsPage.css"
 const ManualsPage = () => {
     return (
-        <div className={'container'} >
-            <h1>Manuals page</h1>
+        <div className={"manuals-page"} >
+            <PageHeader title={"Посібники"}/>
+            <CustomPath currentPage={"Посібники"}/>
         </div>
     );
 };
