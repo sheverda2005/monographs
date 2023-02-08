@@ -18,9 +18,11 @@ const PageHeaderParallax: FC = () => {
                             </div>
                             <div className="nearest-monograph row row-nearest-monograph">
                                 <h1 className={"nearest-monograph-title"} >Найближчий випуск монографії - 16.12</h1>
-                                <div className="nearest-monograph-detail-button">
-                                    Детальніше
-                                </div>
+                                <NavLink to={"/planned-monographs"}>
+                                    <div className="nearest-monograph-detail-button">
+                                        Детальніше
+                                    </div>
+                                </NavLink>
                             </div>
                         </div>
                     </div>

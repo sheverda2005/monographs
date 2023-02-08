@@ -1,0 +1,67 @@
+.planned-monographs-table {
+    width: 100%;
+    border: 1px solid #3375ec;
+    box-shadow: -1px 9px 18px 10px rgb(51 117 236 / 4%);
+    margin: 20px 0px;
+}
+
+.planned-monographs-table-name-monographs {
+    height: 100%;
+    width: 60%;
+    border-right: 1px solid #3375ec;
+
+}
+
+
+.planned-monographs-table-name-monographs-title {
+    width: 100%;
+    height: 100%;
+    font-size: 17px;
+    text-align: center;
+    border-bottom: 1px solid #3375ec;
+    padding: 10px 0px;
+    color: #262f3c;
+}
+
+.planned-monographs-table-date-publication-monographs {
+    width: 40%;
+    height: 100%;
+    font-size: 17px;
+    color: #262f3c;
+}
+
+.planned-monographs-table-date-publication-monographs-title {
+    text-align: center;
+    border-bottom: 1px solid #3375ec;
+    padding: 10px 0px;
+    color: #262f3c;
+}
+
+
+.planned-monographs-table-date-publication-monographs-text {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    text-align: center;
+    padding: 8.8% 15px;
+    color: #262f3c;
+}
+
+@media (max-width: 750px) {
+    .row-planned-monographs-table {
+        flex-direction: column;
+    }
+    .planned-monographs-table-date-publication-monographs {
+        width: 100%;
+    }
+    .planned-monographs-table-name-monographs {
+        width: 100%;
+        border: 0px solid #3375ec;
+    }
+}
+
+@media (max-width: 500px) {
+    .planned-monographs-content-title {
+        font-size: 17px;
+    }
+}
