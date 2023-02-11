@@ -135,7 +135,98 @@
 .nav-item-link {
     color: #2c343b;
     transition: all 0.3s;
+    z-index: 99;
 }
+
+
+.row-nav-item-link-conferences {
+    flex-direction: column;
+}
+
+
+.row-nav-item-link-monographs {
+    flex-direction: column;
+}
+
+
+.nav-item-link-conferences:after {
+    content: "";
+    border: solid black;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 2.5px;
+    margin-left: 7px;
+    margin-bottom: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transition: all 0.3s;
+}
+
+.nav-item-link-monographs:after {
+    content: "";
+    border: solid black;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 2.5px;
+    margin-left: 7px;
+    margin-bottom: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transition: all 0.3s;
+}
+
+
+.nav-item-link-conferences:hover:after {
+    content: "";
+    border: solid #3375ec;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 2.5px;
+    margin-left: 7px;
+    margin-bottom: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transition: all 0.3s;
+}
+
+.nav-item-link-monographs:hover:after {
+    content: "";
+    border: solid #3375ec;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 2.5px;
+    margin-left: 7px;
+    margin-bottom: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transition: all 0.3s;
+}
+
+.nav-item-link-conferences.active:after {
+    content: "";
+    border: solid #3375ec;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 2.5px;
+    margin-left: 7px;
+    margin-bottom: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.nav-item-link-monographs.active:after {
+    content: "";
+    border: solid #3375ec;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 2.5px;
+    margin-left: 7px;
+    margin-bottom: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transition: all 0.3s;
+}
+
 
 .nav-item-link:hover {
     color: #3375ec;

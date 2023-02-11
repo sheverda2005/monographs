@@ -44,8 +44,8 @@ export function useRouters(isAuth: boolean, loading: boolean) {
                <Route path={"/payment"} element={<PaymentPage/>} />
                <Route path={"/contacts"} element={<ContactsPage/>} />
                <Route path={"/account"} element={<AccountPage/>} />
-               <Route path={"/scheduled-conferences-page"}  element={<ScheduledConferencesPage/>} />
-               <Route path={"/planned-monographs"} element={<PlannedMonographsPage/>} />
+               <Route path={"/conferences/scheduled-conferences-page"}  element={<ScheduledConferencesPage/>} />
+               <Route path={"/monographs/planned-monographs"} element={<PlannedMonographsPage/>} />
                <Route path={"*"} element={<ErrorPage/>} />
            </Routes>
        )
@@ -60,8 +60,8 @@ export function useRouters(isAuth: boolean, loading: boolean) {
                <Route path={"/internship"} element={<InternshipPage/>} />
                <Route path={"/payment"} element={<PaymentPage/>} />
                <Route path={"/contacts"} element={<ContactsPage/>} />
-               <Route path={"/scheduled-conferences-page"}  element={<ScheduledConferencesPage/>} />
-               <Route path={"/planned-monographs"} element={<PlannedMonographsPage/>} />
+               <Route path={"/conferences/scheduled-conferences-page"}  element={<ScheduledConferencesPage/>} />
+               <Route path={"/monographs/planned-monographs"} element={<PlannedMonographsPage/>} />
                <Route path={"/authorization"} element={<AuthorizationPage/>} />
                <Route path={"/registration"} element={<RegistrationPage/>} />
                <Route path={"*"} element={<ErrorPage/>} />

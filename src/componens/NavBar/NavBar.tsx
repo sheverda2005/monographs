@@ -5,6 +5,8 @@ import {useTypedSelector} from "../../hooks/useTypedSelector";
 import {NavLink} from "react-router-dom";
 import ModalBurgerMenu from "./MenuBurger/ModalBurgerMenu";
 import SpinnerButton from "../Spinner/SpinnerButton";
+import ConferencesModalMenu from "./NavBarModalMenu/ConferencesModalMenu";
+import MonographsModalMenu from "./NavBarModalMenu/MonographsModalMenu";
 const NavBar: FC = () => {
     const {scrollY} = useTypedSelector(state => state.scroll)
     const {isAuth, loading} = useTypedSelector(state => state.user.userData)
@@ -26,12 +28,14 @@ const NavBar: FC = () => {
                                        <li className={"nav-item"}>
                                            <NavLink className={"nav-item-link"} to={"/"}>Головна</NavLink>
                                        </li>
-                                       <li className={"nav-item"}>
+                                       <li className={"nav-item nav-item-conferences row row-nav-item-link-conferences"}>
                                            <NavLink className={"nav-item-link nav-item-link-conferences"} to={"/conferences"}>Конференції
                                            </NavLink>
-                                           <div className={"nav-item-arrow"} ></div>
-                                       </li><li className={"nav-item"} >
-                                           <NavLink className={"nav-item-link"} to={"/monographs"}>Монографії</NavLink>
+                                           <ConferencesModalMenu/>
+                                       </li>
+                                       <li className={"nav-item nav-item-monographs row row-nav-item-link-monographs"} >
+                                           <NavLink className={"nav-item-link nav-item-link-monographs"} to={"/monographs"}>Монографії</NavLink>
+                                           <MonographsModalMenu/>
                                    </li>
                                        <li className={"nav-item"} >
                                            <NavLink className={"nav-item-link"} to={"/manuals"}>Посібники</NavLink>
