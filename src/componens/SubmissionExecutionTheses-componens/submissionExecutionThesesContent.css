@@ -1,0 +1,65 @@
+.submission-execution-theses-content {
+    width: 100%;
+    border-top: 1px solid #ebebeb;
+    background-color: #ffffff;
+    padding: 40px 0px;
+}
+
+.row-submission-execution-theses-content {
+    flex-direction: column;
+}
+
+
+.submission-execution-theses-content-title {
+    font-size: 20px;
+    line-height: 1.16981;
+    letter-spacing: 0;
+    font-family: Muli, sans-serif;
+    font-weight: 300;
+    color: #262f3c;
+    margin: 0px auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.submission-execution-theses-content-text {
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+.submission-execution-theses-content-ol-items {
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1200px) {
+    .row-submission-execution-theses-content {
+        padding: 0px 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    .row-submission-execution-theses-content {
+        padding: 0px 30px;
+    }
+    .submission-execution-theses-content-ol-items {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .submission-execution-theses-content-title {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 425px) {
+    .row-submission-execution-theses-content {
+        padding: 0px 15px;
+    }
+    .submission-execution-theses-content-ol-items {
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    .submission-execution-theses-content-title {
+        font-size: 16px;
+    }
+}

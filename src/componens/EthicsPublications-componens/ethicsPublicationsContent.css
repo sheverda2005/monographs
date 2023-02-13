@@ -1,0 +1,57 @@
+.ethics-publications-content {
+    width: 100%;
+    border-top: 1px solid #ebebeb;
+    background-color: #ffffff;
+    padding: 40px 0px;
+}
+
+
+.row-ethics-publications-content {
+    flex-direction: column;
+}
+
+.ethics-publications-content-title {
+    font-size: 20px;
+    line-height: 1.16981;
+    letter-spacing: 0;
+    font-family: Muli, sans-serif;
+    font-weight: 300;
+    color: #262f3c;
+    margin: 0px auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.ethics-publications-content-ol-items {
+    font-size: 17px;
+}
+
+@media (max-width: 1150px) {
+    .row-ethics-publications-content {
+        padding: 0px 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .row-ethics-publications-content {
+        padding: 0px 10px;
+    }
+    .ethics-publications-content-title {
+        font-size: 18px;
+    }
+    .ethics-publications-content-ol-items {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 426px) {
+    .row-ethics-publications-content {
+        padding: 0px 10px;
+    }
+    .ethics-publications-content-title {
+        font-size: 16px;
+    }
+    .ethics-publications-content-ol-items {
+        font-size: 14px;
+    }
+}
