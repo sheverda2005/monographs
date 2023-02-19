@@ -12,7 +12,7 @@ const ConferencesModalMenu = () => {
                         <NavLink className={"conferences-modal-menu-content-item-link"} to={"/"}>Аналіз літератури</NavLink>
                         <NavLink className={"conferences-modal-menu-content-item-link"} to={"/conferences/ethics-publications"}>Етика публікацій</NavLink>
                         <NavLink className={"conferences-modal-menu-content-item-link"} to={"/conferences/indexing"}>Індексація</NavLink>
-                        <NavLink className={"conferences-modal-menu-content-item-link"} to={"/"}>Редакційна колегія</NavLink>
+                        <NavLink className={"conferences-modal-menu-content-item-link"} to={"/conferences/editorial-board"}>Редакційна колегія</NavLink>
                         <NavLink className={"conferences-modal-menu-content-item-link"} to={"/"}>Архів</NavLink>
                 </div>
             </div>

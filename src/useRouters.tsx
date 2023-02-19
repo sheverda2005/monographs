@@ -17,6 +17,7 @@ import PlannedMonographsPage from "./pages/PlannedMonographsPage";
 import SubmissionExecutionTheses from "./pages/SubmissionExecutionTheses";
 import EthicsPublications from "./pages/EthicsPublications";
 import IndexingConferencesPage from "./pages/IndexingСonferencesPage";
+import EditorialboardPage from "./pages/EditorialboardPage";
 
 
 export function useRouters(isAuth: boolean, loading: boolean) {
@@ -51,6 +52,7 @@ export function useRouters(isAuth: boolean, loading: boolean) {
                <Route path={"/conferences/submission-execution-theses"} element={<SubmissionExecutionTheses/>} />
                <Route path={"/conferences/ethics-publications"} element={<EthicsPublications/>} />
                <Route path={"/conferences/indexing"} element={<IndexingConferencesPage/>} />
+               <Route path={"/conferences/editorial-board"} element={<EditorialboardPage/>} />
                <Route path={"/monographs/planned-monographs"} element={<PlannedMonographsPage/>} />
                <Route path={"*"} element={<ErrorPage/>} />
            </Routes>
@@ -70,6 +72,7 @@ export function useRouters(isAuth: boolean, loading: boolean) {
                <Route path={"/conferences/submission-execution-theses"} element={<SubmissionExecutionTheses/>} />
                <Route path={"/conferences/ethics-publications"} element={<EthicsPublications/>} />
                <Route path={"/conferences/indexing"} element={<IndexingConferencesPage/>} />
+               <Route path={"/conferences/editorial-board"} element={<EditorialboardPage/>} />
                <Route path={"/monographs/planned-monographs"} element={<PlannedMonographsPage/>} />
                <Route path={"/authorization"} element={<AuthorizationPage/>} />
                <Route path={"/registration"} element={<RegistrationPage/>} />

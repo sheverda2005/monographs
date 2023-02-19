@@ -1,0 +1,57 @@
+.editorial-board-content {
+    width: 100%;
+    border-top: 1px solid #ebebeb;
+    background-color: #ffffff;
+    padding: 40px 0px;
+}
+
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: auto;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto 20px auto;
+}
+
+table, td, th {
+    border: 1px solid rgba(0,0,0,.1);
+}
+
+.td-person-name {
+    width: 40%;
+}
+
+.td-person-name-information {
+    width: 60%;
+}
+
+td {
+    padding: 15px;
+    text-align: center;
+    font-size: 17px;
+    color: #262f3c;
+}
+
+@media (max-width: 600px) {
+    td {
+        font-size: 16px;
+        color: #262f3c;
+    }
+    .td-person-name {
+        width: 20%;
+    }
+
+    .td-person-name-information {
+        width: 80%;
+    }
+}
+
+@media (max-width: 426px) {
+    td {
+        font-size: 15px;
+        color: #262f3c;
+    }
+}
