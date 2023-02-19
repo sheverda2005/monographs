@@ -1,0 +1,58 @@
+.indexing-conferences-content {
+    width: 100%;
+    border-top: 1px solid #ebebeb;
+    background-color: #ffffff;
+    padding: 40px 0px;
+}
+
+.indexing-conferences-images-links {
+    width: 100%;
+}
+
+.row-indexing-conferences-content {
+    flex-direction: column;
+}
+
+.indexing-conferences-images-links {
+    margin-bottom: 40px;
+}
+
+.indexing-conferences-content-text {
+    font-size: 17px;
+}
+
+.indexing-conferences-content-text-link {
+    color: #dc3545;
+}
+
+.indexing-conferences-images-links-link {
+    padding: 15px;
+}
+
+.indexing-conferences-images-links-img {
+    max-height: 100px;
+}
+
+.row-indexing-conferences-images-links {
+    flex-wrap: wrap;
+}
+
+@media (max-width: 375px) {
+    .indexing-conferences-content-text {
+        font-size: 15px;
+    }
+}
+
+
+@media (max-width: 625px) {
+    .indexing-conferences-images-links-img {
+        max-height: 70px;
+    }
+}
+
+@media (max-width: 335px) {
+    .row-indexing-conferences-images-links {
+        align-items: center;
+        justify-content: center;
+    }
+}
