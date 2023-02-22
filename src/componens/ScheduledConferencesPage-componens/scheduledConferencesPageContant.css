@@ -22,7 +22,8 @@
 }
 
 .scheduled-conferences-page-contant-text {
-   font-size: 16px;
+   font-size: 17px;
+   color: #262f3c;
 }
 
 .row-conferences-page-tables {
@@ -97,8 +98,11 @@
         font-size: 17px;
         margin-bottom: 0px;
     }
+}
+
+@media (max-width: 600px) {
     .scheduled-conferences-page-contant-text {
-        font-size: 14px;
+        font-size: 15px;
     }
 }
 

@@ -21,6 +21,20 @@
     flex-direction: column;
 }
 
-.planned-monographs-contentх-text {
-    font-size: 16px;
+.planned-monographs-content-text {
+    font-size: 17px;
+    color: #262f3c;
+}
+
+.planned-monographs-content-text-link {
+    color: #dc3545;
+}
+
+@media (max-width: 600px) {
+    .planned-monographs-content-title {
+        font-size: 18px;
+    }
+    .planned-monographs-content-text {
+        font-size: 15px;
+    }
 }

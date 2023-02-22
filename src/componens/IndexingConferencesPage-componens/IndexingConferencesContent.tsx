@@ -25,9 +25,9 @@ const IndexingConferencesContent = () => {
                     </div>
                     <div className="indexing-conferences-content-text">
                         Роботи будуть проіндексовані в <a className={"indexing-conferences-content-text-link"} href="https://www.doi.org/">DOI</a>  і <a className={"indexing-conferences-content-text-link"} href="https://search.crossref.org/?q=International+Scientific+and+Practical+Conference&publisher-name=International+Science+Group&from_ui=yes">Crossref</a>. Кожен збірник міжнародної наукової конференції також додається в пошукову систему і базу даних наукових цитувань - <a className={"indexing-conferences-content-text-link"} href="https://ouci.dntb.gov.ua/">Open Ukrainian Citation Index (OUCI)</a>. У свою чергу база <a className={"indexing-conferences-content-text-link"} href="https://ouci.dntb.gov.ua/">OUCI</a> містить метадані наукових видань, через які дуже зручно шукати наукову літературу і знаходити цитатні зв'язки між науковими роботами.
-                        <div>
+                        <p>
                             Вибірково роботи індексуються в <a className={"indexing-conferences-content-text-link"} href="https://scholar.google.com.ua/scholar?hl=uk&as_sdt=0%2C5&q=%22International+Science+Group%22&btnG=">Google Scholar</a>, часто не індексація робіт залежить від персональних налаштувань Вашого профілю. Час індексації в <a className={"indexing-conferences-content-text-link"} href="https://scholar.google.com.ua/scholar?hl=uk&as_sdt=0%2C5&q=%22International+Science+Group%22&btnG=">Google Scholar</a> до п'яти місяців. Ви можете прискорити й гарантувати індексацію Ваших робіт в Google Scholar розмістивши їх в репозиторії свого навчального закладу.
-                        </div>
+                        </p>
                     </div>
                 </div>
             </div>
