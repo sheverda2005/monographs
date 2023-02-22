@@ -58,6 +58,7 @@ export function useRouters(isAuth: boolean, loading: boolean) {
                <Route path={"/conferences/editorial-board"} element={<EditorialboardPage/>} />
                <Route path={"/monographs/planned-monographs"} element={<PlannedMonographsPage/>} />
                <Route path={"/monographs/presentation-design-monographs"} element={<PresentationDesignMonographsPage/>} />
+               <Route path={"/monographs/literature-analysis"} element={<LiteratureAnalysisPage/>} />
                <Route path={"*"} element={<ErrorPage/>} />
            </Routes>
        )
@@ -80,6 +81,7 @@ export function useRouters(isAuth: boolean, loading: boolean) {
                <Route path={"/conferences/literature-analysis"} element={<LiteratureAnalysisPage/>} />
                <Route path={"/monographs/planned-monographs"} element={<PlannedMonographsPage/>} />
                <Route path={"/monographs/presentation-design-monographs"} element={<PresentationDesignMonographsPage/>} />
+               <Route path={"/monographs/literature-analysis"} element={<LiteratureAnalysisPage/>} />
                <Route path={"/authorization"} element={<AuthorizationPage/>} />
                <Route path={"/registration"} element={<RegistrationPage/>} />
                <Route path={"*"} element={<ErrorPage/>} />
