@@ -1,0 +1,68 @@
+.indexing-monographs-content {
+    width: 100%;
+    border-top: 1px solid #ebebeb;
+    background-color: #ffffff;
+    padding: 40px 0px;
+}
+
+.indexing-monographs-images-links {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.row-indexing-monographs-content {
+    flex-direction: column;
+}
+
+.indexing-monographs-images-links {
+    margin-bottom: 40px;
+}
+
+.indexing-monographs-content-text {
+    font-size: 17px;
+    color: #262f3c;
+}
+
+.indexing-monographs-content-text-link {
+    color: #dc3545;
+}
+
+.indexing-monographs-images-links-link {
+    padding: 15px;
+}
+
+.indexing-monographs-images-links-img {
+    max-height: 100px;
+}
+
+.row-indexing-monographs-images-links {
+    flex-wrap: wrap;
+    width: 70%;
+}
+
+.indexing-monographs-content-text-link {
+    color: #dc3545;
+}
+
+@media (max-width: 375px) {
+    .indexing-monographs-content-text {
+        font-size: 15px;
+    }
+}
+
+.indexing-monographs-content-text-paragraph {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 625px) {
+    .indexing-monographs-images-links-img {
+        max-height: 70px;
+    }
+}
+
+@media (max-width: 370px) {
+    .row-indexing-monographs-images-links {
+        align-items: center;
+        justify-content: center;
+    }
+}

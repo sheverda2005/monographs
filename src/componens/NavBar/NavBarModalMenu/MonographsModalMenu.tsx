@@ -11,9 +11,9 @@ const MonographsModalMenu = () => {
                     <NavLink className={"monographs-modal-menu-content-item-link"} to={"/monographs/planned-monographs"}>Заплановані монографії</NavLink>
                     <NavLink className={"monographs-modal-menu-content-item-link"} to={"/monographs/presentation-design-monographs"}>Подання та оформлення</NavLink>
                     <NavLink className={"monographs-modal-menu-content-item-link"} to={"/monographs/literature-analysis"}>Аналіз літератури</NavLink>
-                    <NavLink className={"monographs-modal-menu-content-item-link"} to={"/"}>Рецензерти</NavLink>
-                    <NavLink className={"monographs-modal-menu-content-item-link"} to={"/"}>Індексація</NavLink>
-                    <NavLink className={"monographs-modal-menu-content-item-link"} to={"/"}>Етика публікацій</NavLink>
+                    <NavLink className={"monographs-modal-menu-content-item-link"} to={"/monographs/reviewers-page"}>Рецензенти</NavLink>
+                    <NavLink className={"monographs-modal-menu-content-item-link"} to={"/monographs/indexing-monographs"}>Індексація</NavLink>
+                    <NavLink className={"monographs-modal-menu-content-item-link"} to={"/monographs/ethics-publication-monographs-page"}>Етика публікацій</NavLink>
                     <NavLink className={"monographs-modal-menu-content-item-link"} to={"/"}>Архів</NavLink>
                 </div>
             </div>

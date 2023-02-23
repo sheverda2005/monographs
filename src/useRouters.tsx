@@ -20,6 +20,9 @@ import IndexingConferencesPage from "./pages/IndexingСonferencesPage";
 import EditorialboardPage from "./pages/EditorialboardPage";
 import LiteratureAnalysisPage from "./pages/ LiteratureAnalysisPage";
 import PresentationDesignMonographsPage from "./pages/PresentationDesignMonographsPage";
+import ReviewersPage from "./pages/ReviewersPage";
+import IndexingMonographsPage from "./pages/IndexingMonographsPage";
+import EthicsPublicationMonographsPage from "./pages/EthicsPublicationMonographsPage";
 
 
 export function useRouters(isAuth: boolean, loading: boolean) {
@@ -59,6 +62,9 @@ export function useRouters(isAuth: boolean, loading: boolean) {
                <Route path={"/monographs/planned-monographs"} element={<PlannedMonographsPage/>} />
                <Route path={"/monographs/presentation-design-monographs"} element={<PresentationDesignMonographsPage/>} />
                <Route path={"/monographs/literature-analysis"} element={<LiteratureAnalysisPage/>} />
+               <Route path={"/monographs/reviewers-page"} element={<ReviewersPage/>} />
+               <Route path={"/monographs/indexing-monographs"} element={<IndexingMonographsPage/>} />
+               <Route path={"/monographs/ethics-publication-monographs-page"} element={<EthicsPublicationMonographsPage/>} />
                <Route path={"*"} element={<ErrorPage/>} />
            </Routes>
        )
@@ -82,6 +88,9 @@ export function useRouters(isAuth: boolean, loading: boolean) {
                <Route path={"/monographs/planned-monographs"} element={<PlannedMonographsPage/>} />
                <Route path={"/monographs/presentation-design-monographs"} element={<PresentationDesignMonographsPage/>} />
                <Route path={"/monographs/literature-analysis"} element={<LiteratureAnalysisPage/>} />
+               <Route path={"/monographs/reviewers-page"} element={<ReviewersPage/>} />
+               <Route path={"/monographs/indexing-monographs"} element={<IndexingMonographsPage/>} />
+               <Route path={"/monographs/ethics-publication-monographs-page"} element={<EthicsPublicationMonographsPage/>} />
                <Route path={"/authorization"} element={<AuthorizationPage/>} />
                <Route path={"/registration"} element={<RegistrationPage/>} />
                <Route path={"*"} element={<ErrorPage/>} />

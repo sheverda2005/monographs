@@ -1,0 +1,32 @@
+.ethics-publication-monographs-content {
+    width: 100%;
+    border-top: 1px solid #ebebeb;
+    background-color: #ffffff;
+    padding: 40px 0px;
+}
+
+.row-ethics-publication-monographs-content {
+    flex-direction: column;
+}
+
+.ethics-publication-monographs-content-text {
+    color: #262f3c;
+    font-size: 17px;
+}
+
+.ethics-publication-monographs-content-items {
+    font-size: 17px;
+    color: #262f3c;
+    margin: 30px;
+}
+
+@media (max-width: 600px) {
+    .ethics-publication-monographs-content-text {
+        font-size: 15px;
+    }
+    .ethics-publication-monographs-content-items {
+        font-size: 15px;
+        margin: 20px;
+    }
+
+}
