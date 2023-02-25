@@ -10,6 +10,12 @@ const ModalBurgerMenu: FC = () => {
     const {scrollY} = useTypedSelector(state => state.scroll)
     const {menuBurgerNull} = useActions()
     const [clickConferencesAddOptions, setClickConferencesAddOptions] = useState<boolean>(false)
+    function bodyCSS(): void {
+        document.body.style.overflow = 'hidden'
+    }
+    if (click) {
+        bodyCSS()
+    }
     return (
         <div className={`modal-burger-menu ${click ? "active" : ''}`} >
                 <ul className={"modal-burger-menu-nav-items"} >
