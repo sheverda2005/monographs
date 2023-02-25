@@ -12,8 +12,8 @@
     transition: all 0.5s;
 }
 
-.modal-burger-menu.active body {
-    overflow: hidden;
+.modal-burger-menu {
+    overflow: scroll;
 }
 
 .menu-burger.active {
@@ -102,6 +102,7 @@
     transform: rotate(-40deg);
     -webkit-transform: rotate(-40deg);
     z-index: 99;
+    cursor: pointer;
     transition: all 0.3s;
 }
 
@@ -115,6 +116,7 @@
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
     z-index: 99;
+    cursor: pointer;
     transition: all 0.3s;
 }
 
