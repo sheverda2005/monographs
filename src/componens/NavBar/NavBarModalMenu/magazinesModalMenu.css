@@ -1,0 +1,64 @@
+.magazines-modal-menu {
+    position: absolute;
+    display:  none;
+}
+
+.magazines-modal-menu-fake-block {
+    width: 50%;
+    height: 40px;
+    margin-left: 23%;
+}
+
+
+.magazines-modal-menu-content {
+    border: 0.5px solid #ebebeb;
+    border-radius: 7px;
+    padding: 10px 10px;
+    background-color: #ffffff;
+}
+
+.row-magazines-modal-menu-content {
+    flex-direction: column;
+}
+
+.nav-item-magazines:hover .magazines-modal-menu {
+    display: block;
+}
+
+.nav-item-magazines:hover .nav-item-link-magazines {
+    color: #3375ec;
+}
+
+.nav-item-magazines {
+    cursor: pointer;
+    user-select: none;
+}
+
+.nav-item-magazines:hover .nav-item-link-magazines:after {
+    content: "";
+    border: solid #3375ec;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 2.5px;
+    margin-left: 7px;
+    margin-bottom: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transition: all 0.3s;
+}
+
+.magazines-modal-menu:hover {
+    display: block;
+}
+
+.magazines-modal-menu-content-item-link {
+    padding: 1px 1px 5px 1px;
+    border-bottom: 1px solid #ebebeb;
+    margin: 10px;
+    transition: all 0.3s;
+}
+
+.magazines-modal-menu-content-item-link:hover {
+    color: #3375ec;
+    transition: all 0.3s;
+}

@@ -7,6 +7,7 @@ import ModalBurgerMenu from "./MenuBurger/ModalBurgerMenu";
 import SpinnerButton from "../Spinner/SpinnerButton";
 import ConferencesModalMenu from "./NavBarModalMenu/ConferencesModalMenu";
 import MonographsModalMenu from "./NavBarModalMenu/MonographsModalMenu";
+import MagazinesModalMenu from "./NavBarModalMenu/MagazinesModalMenu";
 const NavBar: FC = () => {
     const {scrollY} = useTypedSelector(state => state.scroll)
     const {isAuth, loading} = useTypedSelector(state => state.user.userData)
@@ -40,8 +41,9 @@ const NavBar: FC = () => {
                                        <li className={"nav-item"} >
                                            <NavLink className={"nav-item-link"} to={"/manuals"}>Посібники</NavLink>
                                        </li>
-                                       <li className={"nav-item"} >
-                                           <NavLink className={"nav-item-link"} to={"/magazines"}> Журнали</NavLink>
+                                       <li className={"nav-item nav-item-magazines row row-nav-item-link-magazines"} >
+                                           <div className={"nav-item-link nav-item-link-magazines"} > Журнали</div>
+                                           <MagazinesModalMenu/>
                                        </li>
                                        <li className={"nav-item"} >
                                            <NavLink className={"nav-item-link"} to={"/internship"}>Стажування в ЄС</NavLink>

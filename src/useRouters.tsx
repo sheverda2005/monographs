@@ -3,7 +3,6 @@ import MainPage from "./pages/MainPage";
 import СonferencesPage from "./pages/СonferencesPage";
 import MonographsPage from "./pages/MonographsPage";
 import ManualsPage from "./pages/ManualsPage";
-import MagazinesPage from "./pages/MagazinesPage";
 import InternshipPage from "./pages/InternshipPage";
 import PaymentPage from "./pages/PaymentPage";
 import ContactsPage from "./pages/ContactsPage";
@@ -33,7 +32,6 @@ export function useRouters(isAuth: boolean, loading: boolean) {
                 <Route path={"/conferences"} element={<СonferencesPage/>} />
                 <Route path={"/monographs"} element={<MonographsPage/>} />
                 <Route path={"/manuals"} element={<ManualsPage/>} />
-                <Route path={"/magazines"} element={<MagazinesPage/>} />
                 <Route path={"/internship"} element={<InternshipPage/>} />
                 <Route path={"/payment"} element={<PaymentPage/>} />
                 <Route path={"/contacts"} element={<ContactsPage/>} />
@@ -48,7 +46,6 @@ export function useRouters(isAuth: boolean, loading: boolean) {
                <Route path={"/conferences"} element={<СonferencesPage/>} />
                <Route path={"/monographs"} element={<MonographsPage/>} />
                <Route path={"/manuals"} element={<ManualsPage/>} />
-               <Route path={"/magazines"} element={<MagazinesPage/>} />
                <Route path={"/internship"} element={<InternshipPage/>} />
                <Route path={"/payment"} element={<PaymentPage/>} />
                <Route path={"/contacts"} element={<ContactsPage/>} />
@@ -75,7 +72,6 @@ export function useRouters(isAuth: boolean, loading: boolean) {
                <Route path={"/conferences"} element={<СonferencesPage/>} />
                <Route path={"/monographs"} element={<MonographsPage/>} />
                <Route path={"/manuals"} element={<ManualsPage/>} />
-               <Route path={"/magazines"} element={<MagazinesPage/>} />
                <Route path={"/internship"} element={<InternshipPage/>} />
                <Route path={"/payment"} element={<PaymentPage/>} />
                <Route path={"/contacts"} element={<ContactsPage/>} />

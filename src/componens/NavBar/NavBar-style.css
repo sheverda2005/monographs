@@ -148,6 +148,9 @@
     flex-direction: column;
 }
 
+.row-nav-item-link-magazines {
+    flex-direction: column;
+}
 
 .nav-item-link-conferences:after {
     content: "";
@@ -227,6 +230,44 @@
     transition: all 0.3s;
 }
 
+
+.nav-item-link-magazines:after {
+    content: "";
+    border: solid black;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 2.5px;
+    margin-left: 7px;
+    margin-bottom: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.nav-item-link-magazines.active:after {
+    content: "";
+    border: solid #3375ec;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 2.5px;
+    margin-left: 7px;
+    margin-bottom: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transition: all 0.3s;
+}
+
+.nav-item-link-magazines:hover:after {
+    content: "";
+    border: solid #3375ec;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 2.5px;
+    margin-left: 7px;
+    margin-bottom: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transition: all 0.3s;
+}
 
 .nav-item-link:hover {
     color: #3375ec;

@@ -88,6 +88,32 @@
     transition: all 0.3s;
 }
 
+.modal-burger-menu-nav-item-conferences-add-options-button {
+    content: "";
+    border: solid black;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 4px;
+    margin: 10px;
+    transform: rotate(-40deg);
+    -webkit-transform: rotate(-40deg);
+    z-index: 99;
+    transition: all 0.3s;
+}
+
+.modal-burger-menu-nav-item-conferences-add-options-button-active {
+    content: "";
+    border: solid black;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 4px;
+    margin: 10px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    z-index: 99;
+    transition: all 0.3s;
+}
+
 
 @media (max-width: 1150px) {
     .menu-burger {
@@ -107,7 +133,6 @@
     }
 
 }
-
 
 @media (max-width: 400px) {
     .modal-burger-menu {

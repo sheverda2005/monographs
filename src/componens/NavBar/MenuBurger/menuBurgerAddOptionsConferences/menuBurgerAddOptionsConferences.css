@@ -1,0 +1,12 @@
+.menu-burger-add-options-conferences {
+    padding: 4px;
+}
+
+.row-menu-burger-add-options-conferences {
+    flex-direction: column;
+}
+
+.menu-burger-add-options-conferences-link {
+    border-bottom: 1px solid #ebebeb;
+    margin-bottom: 25px;
+}
