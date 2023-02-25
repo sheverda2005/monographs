@@ -93,7 +93,6 @@
 }
 
 .modal-burger-menu-nav-item-conferences-add-options-button {
-    content: "";
     border: solid black;
     border-width: 0 1px 1px 0;
     display: inline-block;
@@ -103,12 +102,41 @@
     -webkit-transform: rotate(-40deg);
     z-index: 99;
     cursor: pointer;
+    user-select: none;
+    transition: all 0.3s;
+}
+
+
+.modal-burger-menu-nav-item-conferences-add-options-button:hover {
+    border: solid #3375ec;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 4px;
+    margin: 10px;
+    transform: rotate(-40deg);
+    -webkit-transform: rotate(-40deg);
+    z-index: 99;
+    cursor: pointer;
+    user-select: none;
     transition: all 0.3s;
 }
 
 .modal-burger-menu-nav-item-conferences-add-options-button-active {
-    content: "";
-    border: solid black;
+    border: solid #3375ec;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 4px;
+    margin: 10px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    z-index: 99;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.3s;
+}
+
+.modal-burger-menu-nav-item-conferences-add-options-button-active:hover {
+    border: solid #3375ec;
     border-width: 0 1px 1px 0;
     display: inline-block;
     padding: 4px;
@@ -120,6 +148,47 @@
     transition: all 0.3s;
 }
 
+.modal-burger-menu-nav-item-monographs-add-options-button {
+    border: solid black;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 4px;
+    margin: 10px;
+    transform: rotate(-40deg);
+    -webkit-transform: rotate(-40deg);
+    z-index: 99;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.3s;
+}
+
+.modal-burger-menu-nav-item-monographs-add-options-button:hover {
+    border: solid #3375ec;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 4px;
+    margin: 10px;
+    transform: rotate(-40deg);
+    -webkit-transform: rotate(-40deg);
+    z-index: 99;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.3s;
+}
+
+.modal-burger-menu-nav-item-monographs-add-options-button-active {
+    border: solid #3375ec;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 4px;
+    margin: 10px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    z-index: 99;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.3s;
+}
 
 @media (max-width: 1150px) {
     .menu-burger {

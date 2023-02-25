@@ -1,0 +1,22 @@
+.menu-burger-add-options {
+    padding: 0 20px;
+}
+
+.row-menu-burger-add-options {
+    flex-direction: column;
+}
+
+.menu-burger-add-options-link {
+    border-bottom: 1px solid #ebebeb;
+    margin-bottom: 25px;
+    transition: 0.3s;
+}
+
+.menu-burger-add-options-link:hover {
+    color: #3375ec;
+    transition: 0.3s;
+}
+
+.menu-burger-add-options-link.active {
+    color: #3375ec;
+}
