@@ -52,6 +52,11 @@
     transition: all 0.3s;
 }
 
+.monographs-modal-menu-content-item-link.active {
+    color: #3375ec;
+}
+
+
 .monographs-modal-menu-content-item-link:hover {
     color: #3375ec;
     transition: all 0.3s;

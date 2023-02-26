@@ -17,7 +17,7 @@ const MenuBurgerAddOptionsConferences: FC<IMenuBurgerAddOptionsConferences> = ({
                     <NavLink onClick={()=> menuBurgerNull()} className={"menu-burger-add-options-link"} to={"/conferences/ethics-publications"}>Етика публікацій</NavLink>
                     <NavLink onClick={()=> menuBurgerNull()} className={"menu-burger-add-options-link"} to={"/conferences/indexing"}>Індексація</NavLink>
                     <NavLink onClick={()=> menuBurgerNull()} className={"menu-burger-add-options-link"} to={"/conferences/editorial-board"}>Редакційна колегія</NavLink>
-                    <NavLink onClick={()=> menuBurgerNull()} className={"menu-burger-add-options-link"} to={"/"}>Архів</NavLink>
+                    <NavLink onClick={()=> menuBurgerNull()} className={"menu-burger-add-options-link"} to={"/null"}>Архів</NavLink>
                 </div>
             </div>
         );

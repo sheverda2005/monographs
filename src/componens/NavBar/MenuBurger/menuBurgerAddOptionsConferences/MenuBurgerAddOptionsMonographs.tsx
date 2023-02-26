@@ -19,7 +19,7 @@ const MenuBurgerAddOptionsMonographs: FC<IMenuBurgerAddOptionsMonographs> = ({ac
                     <NavLink onClick={()=> menuBurgerNull()} className={'menu-burger-add-options-link'}  to={"/monographs/reviewers-page"}>Рецензенти</NavLink>
                     <NavLink onClick={()=> menuBurgerNull()} className={'menu-burger-add-options-link'}  to={"/monographs/indexing-monographs"}>Індексація</NavLink>
                     <NavLink onClick={()=> menuBurgerNull()} className={'menu-burger-add-options-link'}  to={"/monographs/ethics-publication-monographs-page"}>Етика публікацій</NavLink>
-                    <NavLink onClick={()=> menuBurgerNull()} className={'menu-burger-add-options-link'}  to={"/"}>Архів</NavLink>
+                    <NavLink onClick={()=> menuBurgerNull()} className={'menu-burger-add-options-link'}  to={"/null"}>Архів</NavLink>
                 </div>
             </div>
         );

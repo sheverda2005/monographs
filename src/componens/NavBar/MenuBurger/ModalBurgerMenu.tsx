@@ -1,4 +1,4 @@
-import {FC, useState} from 'react';
+import {FC, useEffect, useState} from 'react';
 import {useTypedSelector} from "../../../hooks/useTypedSelector";
 import {NavLink} from "react-router-dom";
 import {useActions} from "../../../hooks/useActions";
@@ -12,14 +12,37 @@ const ModalBurgerMenu: FC = () => {
     const {menuBurgerNull} = useActions()
     const [clickConferencesAddOptions, setClickConferencesAddOptions] = useState<boolean>(false)
     const [clickMonographsAddOptions, setClickMonographsAddOptions] = useState<boolean>(false)
-    function bodyCSS(): void {
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+    function bodyCSSHidden(): void {
         document.body.style.overflow = 'hidden'
     }
-    if (click) {
-        bodyCSS()
-    } else if (!click) {
+    function bodyCSSAuto(): void {
         document.body.style.overflow = 'auto'
     }
+    useEffect(() => {
+        function handleResize() {
+            setWindowWidth(window.innerWidth);
+        }
+
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
+    useEffect(() => {
+        if (windowWidth >= 1150) {
+            bodyCSSAuto()
+        } else {
+            if (click) {
+                bodyCSSHidden()
+            } else if (!click) {
+                bodyCSSAuto()
+            }
+        }
+    }, [windowWidth]);
+
     return (
         <div className={`modal-burger-menu ${click ? "active" : ''}`} >
                 <ul className={"modal-burger-menu-nav-items"} >
@@ -71,3 +94,4 @@ const ModalBurgerMenu: FC = () => {
 };
 
 export default ModalBurgerMenu;
+

@@ -44,6 +44,14 @@ export function userRegisterRepeatPassword(event: React.ChangeEvent<HTMLInputEle
 export function userRegisterSubmit(event: React.MouseEvent<HTMLButtonElement>, user: UserRegisterData, redirect: any) {
     event.preventDefault()
     return async (dispatch: Dispatch<UserRegisterActions | IUserDataActions>) => {
+        if (!user.name.trim() || !user.surName.trim() || !user.lastName.trim() || !user.password.trim() || !user.email.trim() || !user.repeat_password.trim()) {
+            console.log('Всі поля мають бути заповнені')
+             dispatch({type: UserRegisterDataActionTypes.USER_REGISTER_INPUT_ERROR, payload: "Всі поля не заповнені!"})
+            setTimeout(()=> {
+                dispatch({type: UserRegisterDataActionTypes.USER_REGISTER_INPUT_ERROR_NULL})
+            }, 3000 )
+            return
+        }
         try {
             if (!(user.password === user.repeat_password)) {
                 dispatch({type: UserRegisterDataActionTypes.USER_REGISTER_INPUT_ERROR, payload: "Паролі не співпадають!"})
