@@ -14,7 +14,7 @@ const MonographsModalMenu = () => {
                     <NavLink className={"monographs-modal-menu-content-item-link"} to={"/monographs/reviewers-page"}>Рецензенти</NavLink>
                     <NavLink className={"monographs-modal-menu-content-item-link"} to={"/monographs/indexing-monographs"}>Індексація</NavLink>
                     <NavLink className={"monographs-modal-menu-content-item-link"} to={"/monographs/ethics-publication-monographs-page"}>Етика публікацій</NavLink>
-                    <NavLink className={"monographs-modal-menu-content-item-link"} to={"/"}>Архів</NavLink>
+                    <NavLink className={"monographs-modal-menu-content-item-link"} to={"/null"}>Архів</NavLink>
                 </div>
             </div>
         </div>
