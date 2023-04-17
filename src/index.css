@@ -49,6 +49,7 @@ body{
 
 ::selection {
     background-color: #adbacc;
+    color: #fff;
 }
 
 .container {
